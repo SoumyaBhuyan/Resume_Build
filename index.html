@@ -38,7 +38,7 @@ body  {
 <link rel='icon' type='image/png' sizes='192x192'  href='./android-icon-192x192.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='./favicon-32x32.png'>
 <link rel='icon' type='image/png' sizes='96x96' href='./favicon-96x96.png'> -->
-<link rel='icon' type='image/png' sizes='16x16' href='./favicon-16x16.png'>
+<link rel='icon' type='image/png' sizes='16x16' href='./images/favicon-16x16.png'>
 <!-- <meta name='apple-mobile-web-app-title' content='Leonine'> -->
 <!-- <link rel='manifest' href='./manifest.json'>
 <meta name='msapplication-TileColor' content='#ffffff'>
@@ -61,8 +61,13 @@ body  {
           Hi, my name is Adam.
           <div id='experiences'>
             <br>I'm a ... </br>
-            FULL STACK DEVELOPER | CLOUD ENTHUSIAST | BOARD GAME DESIGNER | ANCESTOR | PHILOSOPHER
+            <div id="thingsIam"></div>
           </div>
+        </div>
+        <div id='experiences'>
+          <a name="experiences">
+            GE | FirstGroup
+          </a>
         </div>
         <div id='projects'>
           <a name="projects">
@@ -98,4 +103,18 @@ body  {
 <script src='https://cdn.jsdelivr.net/jquery.ui.touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/ie10-viewport-bug-workaround.js"></script>
+<script>
+  var thingsIam = ['full stack developer', 'cloud enthusiast', 'ultimate frisbee-er',
+                  'uncle', 'ice cream truck driver'
+                  ];
+  var thingsString = thingsIam.join(' | ');
+  var placeHolder = 0;
+  var textAdder = setInterval(function(){
+  document.getElementById("thingsIam").innerHTML += thingsString.charAt(placeHolder);
+    if (++placeHolder == thingsString.length){
+        clearInterval(textAdder);
+    }
+}, 100);
+
+</script>
 </html>
