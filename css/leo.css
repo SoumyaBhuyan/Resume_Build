@@ -134,9 +134,10 @@ background-repeat: no-repeat;*/
   font-size:39;
   text-align: center;
   width:100%;
-  margin-top: 100px;
+  margin-top: 5%;
   font-family: 'Podkova';
   color: #6d6d6a;
+  background-color:rgba(243,247,195,0.4);
 }
 
 .profilepic {
@@ -145,6 +146,7 @@ background-repeat: no-repeat;*/
   border-radius: 50%;
   padding: 10px;
   border-color: black;
+  margin-top: 7%;
 }
 
 #introduction {
@@ -160,9 +162,21 @@ background-repeat: no-repeat;*/
   height: 100%;
   font-size:22;
   width:100%;
-  display: inline-block;
-  vertical-align: middle;
   /*margin:5px;*/
+}
+
+#contacts {
+  position:relative;
+  height: 100%;
+  font-size:22;
+  width:100%;
+}
+
+#projects {
+  position:relative;
+  height: 100%;
+  font-size:22;
+  width:100%;
 }
 
 .leftCol {
@@ -171,41 +185,21 @@ background-repeat: no-repeat;*/
       right: 50%;
       left: 0;
       top: 0;
-      bottom: 30px;
-      background-color:rgba(243,247,195,1);
+      bottom: 0;
       font-family: 'Kaushan Script', cursive;
-      font-size: 40;
+      font-size: 45;
       color: #7b7e84;
-      vertical-align: middle;
 }
 
 .rightCol {
-        position: absolute;
-        overflow: auto;
-        left: 50%;
-        right: 0;
-        top: 0;
-        bottom: 30px;
-        background-color: white;
+    position: absolute;
+    overflow: auto;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
   }
-
-
-#contacts {
-  position:relative;
-  height: 100%;
-  text-align: center;
-  width:100%;
-  margin:5px;
-}
-
-#projects {
-  position:relative;
-  height: 100%;
-  font-size:20;
-  text-align: center;
-  width:100%;
-  margin:5px;
-}
 
 #nav {
 position: inherit;
@@ -238,10 +232,89 @@ background-color: #eaeff2;
   opacity: 0.9;
 }
 
+#experience_left{
+  color: #7b7e84;
+  text-align: center;
+}
+
+#experience_right{
+  background-color: white;
+}
+
+#project_left{
+  background-color: white;
+}
+
+#project_right{
+  color: #7b7e84;
+}
+
+#contact_left{
+  color: #7b7e84;
+  vertical-align: middle;
+}
+
+#contact_right{
+  background-color: white;
+}
+
+.text_align{
+  text-align: center;
+  margin-top: 60%;
+}
+
+#experience_right li {
+    display: inline;
+    cursor: auto;
+}
+
 a {
 font-family: 'Podkova';
-letter-spacing: 0.1em;
-font-size: 0.95em;
 color: #7b7e84;
 text-decoration: none;
+}
+
+.logo{
+  height:12%;
+  width:12%;
+  margin: 10%;
+  margin-top: 15%;
+}
+
+.desc {
+    padding: 10% ;
+    text-align: left;
+    background-color: #e5eecc;
+    font-family: 'Podkova';
+    color: #7b7e84;
+    padding: 10%;
+    display: none;
+    letter-spacing: 0.09em;
+    font-size: 17;
+}
+
+h5{
+    font-family: 'Podkova';
+    font-weight: 700;
+    color: #7b7e84;
+    font-size: 20;
+}
+
+#contacts_right_col {
+  margin-top:20%;
+  padding: 10% ;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-family: 'Podkova';
+  color: #7b7e84;
+  font-size: 17;
+  font-weight: 500;
+}
+
+#contacts_right_italic {
+  font-family: 'Podkova';
+  color: #7b7e84;
+  font-size: 17;
+  font-weight: 500;
+  font-style: italic;
 }
