@@ -107,7 +107,7 @@ background-color:rgba(243,247,195,0.6);
 -webkit-back-shadow: 0px 0px 16px rgba(0,0,0,0.2);
 -webkit-box-shadow: 0px 0px 16px rgba(0,0,0,0.2);
 box-shadow: 0px 0px 16px rgba(0,0,0,0.2);
-overflow: auto;
+overflow: hidden;
 }
 
 #header {
@@ -147,6 +147,7 @@ background-repeat: no-repeat;*/
   padding: 10px;
   border-color: black;
   margin-top: 7%;
+  -webkit-transform: scale(1);
 }
 
 #introduction {
@@ -268,11 +269,11 @@ background-color: #eaeff2;
     cursor: auto;
 }
 
-a {
+.items {
 font-family: 'Podkova';
 color: #7b7e84;
-text-decoration: none;
 }
+
 
 .logo{
   height:12%;
@@ -317,4 +318,83 @@ h5{
   font-size: 17;
   font-weight: 500;
   font-style: italic;
+}
+
+.project_wrapper {
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {float: right !important;}
+
+.parent {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.bg-one {background-image: url(../images/Movies_App.jpg);}
+.bg-two {background-image: url(../images/Tv_App.jpg);}
+.bg-three {background-image: url(../images/Countries_App.jpg);}
+.bg-four {background-image: url(../images/Game_App.jpg);}
+
+.proj_images {
+  font-size: 35px;
+  color: white !important;
+  font-family: sans-serif;
+  font-weight:bold;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: transform 5s ease-in-out;
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover proj_images, .parent:focus proj_images {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
 }

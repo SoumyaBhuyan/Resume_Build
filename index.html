@@ -3,7 +3,8 @@
 <style>
 body  {
     background-image: url("images/bg1.jpg");
-    background-size: auto;
+    width: 100%;
+    height: 100%;
     text-align: center;
 }
 </style>
@@ -51,9 +52,9 @@ body  {
       <div id='header'>
         <div id="nav">
           <ul>
-            <li><a href='#experiences'>EXPERIENCES</a></li>
-            <li><a href='#projects'>PROJECTS</a></li>
-            <li><a href='#contacts'>CONTACT</a></li>
+            <li><a class="items" href='#experiences'>EXPERIENCES</a></li>
+            <li><a class="items" href='#projects'>PROJECTS</a></li>
+            <li><a class="items" href='#contacts'>CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -87,13 +88,31 @@ body  {
               <div class="text_align">PROJECTS</div>
             </div>
             <div class="rightCol" id="project_right">
-              <ul>
-                <li>Movie Tracker App</li>
-                <li></li>
-                <li></li>
-              </ul>
+              <div class="project_wrapper">
+                <div class="parent" onclick="">
+                  <div class="child bg-one">
+                    <a class="proj_images" target="_blank" href="#">Movies App</a>
+                  </div>
+                </div>
+                <div class="parent" onclick="">
+                  <div class="child bg-two">
+                    <a class="proj_images" target="_blank" href="#">TV Tracking App</a>
+                      <div class="proj_text"></div>
+                  </div>
+                </div>
+                <div class="parent" onclick="">
+                  <div class="child bg-three">
+                    <a class="proj_images" target="_blank" href="#">Video Games App</a>
+                  </div>
+                </div>
+                <div class="parent" onclick="">
+                  <div class="child bg-four">
+                    <a class="proj_images" target="_blank" href="#">Countries Travel App</a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         <div id="contacts">
           <a name="contacts"></a>
             <div class="leftCol" id="contact_left">
