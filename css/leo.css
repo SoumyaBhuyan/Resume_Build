@@ -266,7 +266,7 @@ background-color: #eaeff2;
 
 #experience_right li {
     display: inline;
-    cursor: auto;
+    cursor: pointer;
 }
 
 .items {
